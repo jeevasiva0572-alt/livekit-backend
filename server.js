@@ -214,6 +214,7 @@ io.on('connection', async (socket) => {
         syncRoomState(room, socket);
         return;
       }
+      
 
       // Add to waiting room if not already there
       const alreadyWaiting = currentRoom.waitingRoom.find(u => u.name === name);
